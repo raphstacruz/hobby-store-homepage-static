@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand title" href="#">NAHEL HOBBYWORKS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">SERVICES</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-actions d-flex align-items-center gap-3">
+                    <a href="#" class="cart-link position-relative">
+                        <i class="bi bi-cart"></i>
+                        <span class="cart-badge">3</span>
+                    </a>
+                    <a href="#" class="btn-login">Login</a>
+                    <a href="#" class="btn-register">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    
+    
+    <!-- Hero Section Start -->
+    <section id="hero" class="min-vh-100 d-flex align-items-center text-center text-white">
+        <div class="hero-overlay w-100 h-100 position-absolute top-0 start-0"></div>
+        <div class="container position-relative">
+            <h1 class="display-3 fw-bold title">Welcome to Nahel Hobbyworks</h1>
+            <p class="lead mb-4">
+                Discover premium hobby kits, model services, and tools for builders of all levels.
+            </p>
+            <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+    
+    
+    <!-- Carousel Start -->
+    <section id="featured" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 title">FEATURED PRODUCTS</h2>
+            
+            <div id="featured-carousel" class="carousel slide mx-auto" data-bs-ride="carousel">
+                <div class="carousel-inner rounded shadow">
+                    <div class="carousel-item active">
+                        <img src="images/PGU_NU_BANNER.webp" class="d-block w-100" alt="pgu-nu">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/MG_VIDAR_BANNER.webp" class="d-block w-100" alt="mg-ibo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/HG_GQUUUUUUX_BANNER.webp" class="d-block w-100" alt="rg">
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#featured-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featured-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Carousel End -->
+    
+    <!-- Card Start -->
+    <section id="new-arrivals" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 title">NEW ARRIVALS</h2>
+            
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="product-media ratio ratio-16x9 rounded-top">
+                            <img src="images/HGTWFM-Gundam-Aerial-box.webp" alt="HG Aerial">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">HG XVX-016 Gundam Aerial</h5>
+                            <p class="card-text text-muted">High Grade 1/144 Witch from Mercury</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">₱1,499</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="product-media ratio ratio-16x9 rounded-top">
+                            <img src="images/RG-Nu-Gundam-box.webp" alt="RG Nu">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">RG RX-93 ν Gundam</h5>
+                            <p class="card-text text-muted">Real Grade 1/144 Universal Century</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">₱2,450</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="product-media ratio ratio-16x9 rounded-top">
+                            <img src="images/MG-Zeta-Gundam-Ver-Ka-box.webp"> 
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">MG MSZ-006 Zeta Gundam Ver. Ka</h5>
+                            <p class="card-text text-muted">Master Grade 1/100 Ver. Ka</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">₱3,599</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="product-media ratio ratio-16x9 rounded-top">
+                            <img src="images/MG-Gundam-Barbatos-box.webp"> 
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">MG ASW-G-08 Gundam Barbatos</h5>
+                            <p class="card-text text-muted">Master Grade 1/100 Iron-Blooded Orphans</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">₱2,700</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="product-media ratio ratio-16x9 rounded-top">
+                            <img src="images/PG-Unicorn-Gundam-box.webp"> 
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">PG RX-0 Unicorn Gundam</h5>
+                            <p class="card-text text-muted">Perfect Grade 1/60 Universal Century</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">₱15,999</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="product-media ratio ratio-16x9 rounded-top">
+                            <img src="images/MG-Zeta-Gundam-Ver-Ka-box.webp"> 
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">MG MSZ-010 ZZ Gundam Ver. Ka</h5>
+                            <p class="card-text text-muted">MG 1/100 Universal Century</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">₱3,899</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 7 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="product-media ratio ratio-16x9 rounded-top">
+                            <img src="images/MG_MSN-04_Sazabi_(Ver._Ka)_BOX.webp"> 
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">MG MSN-04 Sazabi Ver. Ka</h5>
+                            <p class="card-text text-muted">MG 1/100 Universal Century</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">₱4,995</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Card End -->
+    
+    
+    <!-- Footer Start -->
+    <footer class="footer py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 Raphael Paul Sta. Cruz. All rights reserved.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
